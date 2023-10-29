@@ -1,0 +1,30 @@
+headers:
+    host: basketball-data.p.rapidapi.com
+    key: f815014862msh56e9a764a576d63p13aec2jsn709152c4a595
+logging:
+    file:
+        path: .
+spring:
+    datasource:
+        driverClassName: org.h2.Driver
+        password: radmilo123
+        url: jdbc:h2:mem:basketballdb
+        username: radmilo
+    h2:
+        console:
+            enabled: true
+    jpa:
+        database-platform: org.hibernate.dialect.H2Dialect
+        show-sql: true
+    mail:
+        host: smtp.gmail.com
+        password: vtpwagottqrhbkxn
+        port: 587
+        properties:
+            mail:
+                smtp:
+                    auth: true
+                    starttls:
+                        enable: true
+        username: markovicradmilo35@gmail.com
+    uri: http://localhost:8080/basketball
